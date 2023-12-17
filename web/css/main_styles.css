@@ -1,0 +1,105 @@
+/* обнуление вообще всех ненужных стилей */
+body{
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    font-family: 'Preahvihear', sans-serif;
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+div{
+    padding: 0px;
+    margin: 0px;
+}
+/* описание main дива для выравнивания лого и нав бара */
+.main_section
+{
+    display: flex;
+}
+/* стили для нав бара */
+.nav_panel
+{
+    margin-top: 10px;
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    
+}
+.nav_component{
+    padding: 3px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffff;
+    border: 2px solid white;
+    transition: 1s;
+}
+.nav_component:hover{
+    border-color: black;
+}
+/* стили для логотипа(фотки) */
+.logo_image
+{
+    padding: 0px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: 0px solid black ;
+    border-radius: 150px;
+    width: 70px;
+    height: 70px;
+    background-image: url(/images/logo_img/logo_main_page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* стили для кружочка */
+.main_loader
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.loader{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid purple;
+    border-right: 16px solid yellow;
+    border-bottom: 16px solid red;
+    border-left: 16px solid blue;
+    width: 320px;
+    height: 320px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* подвал */
+.footer{
+    border: 3px solid white;
+    border-radius: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+    height: 30px;
+    font-weight: bold;
+    background-color: black;
+    color: #ffff;
+}
